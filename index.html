@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="game-shell">
+        <section class="game-card">
+            <div class="title">
+                <h1 id="title-heading">Rock-Paper-Scissors</h1>
+                <p id="title-para">Challenge the AI</p>
+            </div>
+
+            <div class="Score-section">
+                <h2 id="score-el">Scoreboard</h2>
+
+                <div class="score-grid">
+                    <p id="human-el">Human</p>
+                    <p id="human-count">0</p>
+
+                    <p id="ai-el">AI</p>
+                    <p id="ai-count">0</p>
+                </div>
+
+                <div class="choice-grid">
+                    <p class="choice-label">Your move:</p>
+                    <p id="human-choice">-</p>
+
+                    <p class="choice-label">AI move:</p>
+                    <p id="ai-choice">-</p>
+                </div>
+
+                <p id="game-el">Start Game</p>
+                <p id="result-el">Make your first move.</p>
+            </div>
+
+            <div class="Buttons">
+                <button id="rock-el" onclick="rock()">Rock</button>
+                <button id="paper-el" onclick="paper()">Paper</button>
+                <button id="scissors-el" onclick="scissors()">Scissors</button>
+                <button id="reset-el" onclick="reset()">Reset</button>
+            </div>
+
+            <div class="gameCount">
+                <p>Game count:</p>
+                <p id="total-game-count">0</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
